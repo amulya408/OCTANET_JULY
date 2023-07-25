@@ -1,0 +1,116 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	color: white;
+}
+
+.container{
+	min-height: 100vh;
+	width: 100%;
+	background-image: url(d2.jpg);
+	background-size: cover;
+	background-position: center;
+	padding:20px;
+}
+
+
+
+.todo{
+	background-color: #333;
+	width: 100%;
+	padding:40px 30px 70px ;
+	max-width: 40%;
+	border-radius: 20px;
+	margin: 100px auto;
+}
+
+.todo h2{
+	display:flex;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.add{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #edeef0;
+	padding-left: 30px;
+	border-radius: 30px;
+	margin-bottom: 25px;
+}
+input{
+	flex: 1;
+	border:none;
+	padding: 5px;
+	outline: none;
+	background: transparent;
+	color:black;
+	font-weight:60%;
+}
+
+button{
+	border:none;
+	outline: none;
+	border-radius: 20px;
+	background-color: blueviolet;
+	color: black;
+	cursor: pointer;
+	padding: 10px 40px;
+	font-size: 20px;
+}
+
+ul li{
+	list-style: none;
+	cursor: pointer;
+	padding: 15px;
+	font-size: 20px;
+	position: relative;
+	left: 10px;
+}
+
+ul li::before{
+	content: '';
+	position: absolute;
+	background-color: white;
+	width: 20px;
+	height: 20px;
+	border-radius: 50px;
+    left: -12px;
+    bottom: 17px;
+}
+
+ul li.check{
+	color:black;
+	text-decoration: line-through;
+}
+
+ul li.check::before{
+	background-color: blueviolet;
+}
+
+ul li span{
+	position: absolute;
+	right: 0;
+	top: 5px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	font-size: 22px;
+	line-height: 40px;
+}
+
+ul li span:hover{
+	background: #edeef0;
+	border-radius: 50px;
+	user-select: none;
+}
+.sr{
+ background-color:#333;
+ text-align: center;
+ padding: 10px;
+ color: white;
+ letter-spacing: 2px;
+}
